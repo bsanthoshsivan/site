@@ -1,0 +1,120 @@
+#my-bio{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:64px;
+    margin-top:64px;
+}
+
+#bio-image{
+    column-count: 1;
+    height:560px;
+    border-radius: 20px;
+    background-image: url(./assets/Snapseed.jpg);   
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100);
+}
+
+#bio-intro{
+    column-count: 1;
+    height:fit-content;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 24px;
+}
+
+
+/* COMPONENTS */
+.entry{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    padding-left:32px;
+}
+
+.caption{
+    font-size: 0.9rem;
+    color: darkgrey;
+    line-height: 1.5;
+}
+
+.title{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.sub-text{
+    font-size: 1rem;
+    color: #747474;
+    line-height: 1.75;
+}
+
+
+/* DETAILS */
+#details-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    column-gap:64px;
+    row-gap:64px;
+    max-width: var(--workwidth);
+    grid-template-areas:
+    "a b""c d""e f";
+    flex:1;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+
+    border-radius: 20px;
+    padding:48px 32px;
+    background-color: #fbfbfb;
+}
+
+#experiences{
+    grid-area: b;
+}
+
+#skills{
+    grid-area: a;
+}
+
+#tools{
+    grid-area: c;
+}
+
+#educations{
+    grid-area: d;
+}
+
+#awards{
+    grid-area: e;
+}
+#contacts{
+    grid-area: f;
+}
+
+
+/* Mobile Screen */
+@media only screen and (max-width: 1024px) {
+
+    #my-bio{
+        grid-template-columns: 1fr;
+        gap:32px;
+    }
+
+    #bio-image{
+        height:400px;
+    }
+
+    #details-list{
+        grid-template-columns: 1fr;
+        grid-template-areas: "b""d""a""c""e""f";
+        gap:32px;
+    }
+    
+
+  }

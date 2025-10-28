@@ -8,19 +8,20 @@
 #bio-image{
     column-count: 1;
     height:560px;
-    border-radius: 20px;
-    background-image: url(./assets/Snapseed.jpg);   
+    border-radius: 24px;
+    background-image: url(./assets/profpic.jpeg);   
     background-size: cover;
     background-position: center;
-    filter: grayscale(100);
+    /* filter: grayscale(100); */
 }
+
 
 #bio-intro{
     column-count: 1;
     height:fit-content;
     display: grid;
     grid-auto-flow: row;
-    row-gap: 24px;
+    row-gap: 24px; 
 }
 
 
@@ -34,7 +35,7 @@
 
 .caption{
     font-size: 0.9rem;
-    color: darkgrey;
+    color: #6d6d6d;
     line-height: 1.5;
 }
 
@@ -42,11 +43,12 @@
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
+    color:#edecec;
 }
 
 .sub-text{
     font-size: 1rem;
-    color: #747474;
+    color: #9d9d9d;
     line-height: 1.75;
 }
 
@@ -68,11 +70,13 @@
     display: flex;
     flex-direction: column;
     gap:24px;
-
     border-radius: 20px;
     padding:48px 32px;
-    background-color: #fbfbfb;
+    /* background-color: #fbfbfb; */
+    background-color: #1b1913;
+    border:1px solid #2a2822;
 }
+
 
 #experiences{
     grid-area: b;
@@ -96,6 +100,7 @@
 #contacts{
     grid-area: f;
 }
+
 
 
 /* Mobile Screen */
